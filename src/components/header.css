@@ -1,0 +1,96 @@
+/* Wrapper: full-screen layout */
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;          /* Full viewport height */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Sidebar Navigation: 20% width */
+.side-nav {
+  flex: 1;    
+  background: green;   /* Dark sidebar background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Navigation links */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav a:hover {
+  background: #34495e;
+}
+
+/* Active link styling */
+.nav a.active {
+  background: #007bff;     /* Active background color */
+  color: #fff;
+  font-weight: bold;
+  border-left: 4px solid #0056b3;  /* Left highlight */
+}
+
+/* Right Content: 80% width */
+.content {
+  width: 80%;
+  background: #f4f4f4;     /* Light background for contrast */
+  padding: 30px;
+  overflow-y: auto;         /* Scrollable content if needed */
+}
+
+/* Title styling */
+.title {
+  background: #34495e;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.side-content{
+/* background-color: red; */
+display: flex;
+flex: 4;    
+padding: 20px;
+}
+.page-Contnet{
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+  }
+  
+  .side-nav {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
