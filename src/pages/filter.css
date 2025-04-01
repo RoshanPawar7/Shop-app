@@ -1,0 +1,218 @@
+/* 🌟 General Styles */
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* 🔎 Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .header input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px #007bff;
+  }
+  
+  .add-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* 📋 Form Styles */
+  .form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .form {
+    background: #fff;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px #007bff;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* 📊 Table Styles */
+  .oil-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .oil-table th, .oil-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .oil-table th {
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .oil-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  .oil-table td {
+    font-size: 14px;
+  }
+  
+  /* 🛠️ Action Buttons */
+  .oil-table button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .oil-table button:hover {
+    opacity: 0.8;
+  }
+  
+  .oil-table button:nth-child(1) {
+    background-color: #ffc107; /* Edit button */
+    color: #fff;
+  }
+  
+  .oil-table button:nth-child(2) {
+    background-color: #dc3545; /* Delete button */
+    color: #fff;
+  }
+  
+  /* 🆘 No Data Message */
+  .no-data {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  /* 🎯 Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .header input {
+      width: 100%;
+    }
+  
+    .form {
+      width: 90%;
+    }
+  
+    .oil-table th, .oil-table td {
+      padding: 10px;
+    }
+  }
+  

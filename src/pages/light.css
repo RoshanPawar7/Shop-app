@@ -1,0 +1,107 @@
+/* Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header with Search and Add Button */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-btn {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background: #c0392b;
+  }
+  
+  /* Table Styling */
+  .oil-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .oil-table th, .oil-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .oil-table th {
+    background: #2c3e50;
+    color: white;
+  }
+  
+  .oil-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Form Styling */
+  .form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background: #27ae60;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background: #e74c3c;
+    color: white;
+  }
+  

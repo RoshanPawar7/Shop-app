@@ -1,167 +1,168 @@
 {
-    "oil": [
-      {
-        "id": 101,
-        "name": "Castrol-BS4",
-        "brand": "Castrol",
-        "price": 1000,
-        "stock": 10,
-        "liter" :5 ,
-        "category": "oil" 
-      },
-      {
-        "id":102,
-        "name": "Valvoline-CI4+",
-        "brand": "Valoline",
-        "price": 2200,
-        "stock": 5,
-        "liter" :10 ,
-        "category": "oil"
-      },
-      {
-        "id":103,
-        "name": "Servo-felt",
-        "brand": "Servo",
-        "price": 300,
-        "stock": 20,
-        "liter" :1  ,
-        "category": "oil"
-      },
-      {
-        "id":104,
-        "name":"Gulf-x10",
-        "brand": "Gulf",
-        "price": 1500,
-        "stock": 20,
-        "liter" :7.5 ,
-        "category": "oil"
-      }
-
-    ],
-    "brake": [
-      {
-        "id": 201,
-        "name": "Brake Pads",
-        "brand": "Brembo",
-        "price": 1400,
-        "stoc" : 20,
-        "category": "brake"
-
-      },
-      {
-        "id": 202,
-        "name": "Brake-Liner",
-        "brand": "Rane",
-        "price": 2500,
-        "stock": 15,
-        "category": "brake"
-      },
-      {
-        "id": 203,
-        "name": "Brake-Liner",
-        "brand": "TVS",
-        "price": 1200,
-        "stock": 15,
-        "category": "brake"
-      }
-
-    ],
-    "filter": [
-      {
-        "id": 301,
-        "name": "Oil-filter",
-        "brand": "feetgaurd",
-        "price": 300,
-        "stock": 15,
-        "category": "filter"
-      },
-      {
-        "id": 302,
-        "name": "Disel-filter",
-        "brand": "feetgaurd",
-        "price": 250,
-        "stock": 20,
-        "category": "filter"
-      },
-      {
-        "id": 303,
-        "name": "Air-filter",
-        "brand": "Bosch",
-        "price": 400,
-        "stock": 15,
-        "category": "filter"
-      },
-      {
-        "id": 303,
-        "name": "Ac-filter",
-        "brand": "Bosch",
-        "price": 600,
-        "stock": 15,
-        "category": "filter"
-      }
-    ],
-    "light":[
-      {
-        "id": 401,
-        "name": "Head-light",
-        "brand": "Hella",
-        "price": 600,
-        "stock": 15,
-        "category": "light"
-      },
-      {
-        "id": 402,
-        "name": "Head-light-bulp",
-        "brand": "Minda",
-        "price": 200,
-        "stock": 15,
-        "category": "light"
-      },
-      {
-        "id": 403,
-        "name": "Side-indicator",
-        "brand": "Hella",
-        "price": 600,
-        "stock": 15,
-        "category": "light"
-      },
-      {
-        "id": 401,
-        "name": "LED-light",
-        "brand": "LED",
-        "price": 350,
-        "stock": 15,
-        "category": "light"
-      }
-    ],
-    "gear":[
-      
-        {
-          "id": 501,
-          "name": "Gear-1",
-          "brand": "Gajra",
-          "price":1500,
-          "stock": 5,
-          "category": "gear"
-        },
-        {
-          "id": 502,
-          "name": "Top-gear",
-          "brand": "Gajra",
-          "price":2000,
-          "stock": 3,
-          "category": "gear"
-        },
-        {
-          "id": 503,
-          "name": "Revers-gear",
-          "brand": "Tata",
-          "price":3500,
-          "stock": 5,
-          "category": "gear"
-        }
-      
-    ]
-  }
-
-   
+  "oil": [
+    {
+      "id": "101",
+      "name": "Castrol-xl",
+      "brand": "Castrol",
+      "stock": 4,
+      "price": 4500,
+      "liter": 50,
+      "category": "oil"
+    },
+    {
+      "id": "102",
+      "name": "Valvoline-CI4",
+      "brand": "valoline",
+      "stock": 8,
+      "price": 900,
+      "liter": 20,
+      "category": "oil"
+    },
+    {
+      "id": "103",
+      "name": "Servo-felt",
+      "brand": "servo",
+      "stock": 5,
+      "price": 450,
+      "liter": 1,
+      "category": "oil"
+    },
+    {
+      "id": "104",
+      "name": "Gulf-x10",
+      "brand": "Gulf",
+      "price": 1500,
+      "stock": 15,
+      "liter": 7,
+      "category": "oil"
+    }
+  ],
+  "brake": [
+    {
+      "id": "201",
+      "name": "Brake Pads",
+      "brand": "Brembo",
+      "price": 1400,
+      "stoc": 20,
+      "category": "brake"
+    },
+    {
+      "id": "202",
+      "name": "Brake-Liner",
+      "brand": "Rane",
+      "price": 2500,
+      "stock": 15,
+      "category": "brake"
+    },
+    {
+      "id": "203",
+      "name": "Brake-Liner",
+      "brand": "TVS",
+      "price": 1200,
+      "stock": 15,
+      "category": "brake"
+    }
+  ],
+  "filter": [
+    {
+      "id": "301",
+      "name": "Oil-filter",
+      "brand": "feetgaurd",
+      "price": 300,
+      "stock": 15,
+      "category": "filter"
+    },
+    {
+      "id": "302",
+      "name": "Disel-filter",
+      "brand": "feetgaurd",
+      "price": 250,
+      "stock": 20,
+      "category": "filter"
+    },
+    {
+      "id": "303",
+      "name": "Air-filter",
+      "brand": "Bosch",
+      "price": 400,
+      "stock": 15,
+      "category": "filter"
+    },
+    {
+      "id": "303",
+      "name": "Ac-filter",
+      "brand": "Bosch",
+      "price": 600,
+      "stock": 15,
+      "category": "filter"
+    }
+  ],
+  "light": [
+    {
+      "id": "401",
+      "name": "Head-light",
+      "brand": "Hella",
+      "price": 600,
+      "stock": 15,
+      "category": "light"
+    },
+    {
+      "id": "402",
+      "name": "Head-light-bulp",
+      "brand": "Minda",
+      "price": 200,
+      "stock": 15,
+      "category": "light"
+    },
+    {
+      "id": "403",
+      "name": "Side-indicator",
+      "brand": "Hella",
+      "price": 600,
+      "stock": 15,
+      "category": "light"
+    },
+    {
+      "id": "404",
+      "name": "LED-light",
+      "brand": "LED",
+      "price": 350,
+      "stock": 15,
+      "category": "light"
+    },
+    {
+      "id": "928",
+      "name": "Roshan pawar",
+      "brand": "lbiyfd",
+      "price": "20",
+      "stock": "40",
+      "liter": ""
+    }
+  ],
+  "gear": [
+    {
+      "id": "501",
+      "name": "Gear-1",
+      "brand": "Gajra",
+      "price": 1500,
+      "stock": 5,
+      "category": "gear"
+    },
+    {
+      "id": "502",
+      "name": "Top-gear",
+      "brand": "Gajra",
+      "price": 2000,
+      "stock": 3,
+      "category": "gear"
+    },
+    {
+      "id": "503",
+      "name": "Revers-gear",
+      "brand": "Tata",
+      "price": 3500,
+      "stock": 5,
+      "category": "gear"
+    }
+  ]
+}
