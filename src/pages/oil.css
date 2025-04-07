@@ -1,217 +1,116 @@
-/* 🌟 General Styles */
-.container {
-  font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Oil.css */
+
+.container-oil {
+  max-width: 1000px;
+  margin: 30px auto;
   padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 🔎 Header Section */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.header input {
-  width: 70%;
-  padding: 10px;
-  font-size: 16px;
+.header input[type="text"] {
+  padding: 8px 12px;
+  width: 300px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   outline: none;
   transition: 0.3s;
 }
 
-.header input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px #007bff;
+.header input[type="text"]:focus {
+  border-color: #007BFF;
 }
 
-.add-btn {
-  background-color: #28a745;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
+button {
+  margin: 5px;
+  padding: 8px 16px;
   border: none;
+  background-color: grey;
+  color: white;
+  border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 5px;
 }
 
-.add-btn:hover {
-  background-color: #218838;
+button:hover {
+  background-color: #999;
 }
 
-/* 📋 Form Styles */
-.form-overlay {
+.form-container,
+.form-container-edit {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.form {
-  background: #fff;
-  width: 500px;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 0.5s;
-}
-
-.form h2 {
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-
-.form input {
   width: 100%;
-  padding: 12px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.form-overlay,
+.form-overlay-edit {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form input,
+.form-edit input {
+  width: 100%;
   margin-bottom: 15px;
-  font-size: 14px;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   outline: none;
   transition: 0.3s;
 }
 
-.form input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px #007bff;
+.form input:focus,
+.form-edit input:focus {
+  border-color: #007BFF;
 }
 
-.form-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.submit-btn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-}
-
-.cancel-btn {
-  background-color:red;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-}
-
-.cancel-btn:hover {
-  background-color: #c82333;
-}
-
-/* 📊 Table Styles */
-.oil-table {
+table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-.oil-table th, .oil-table td {
-  padding: 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.oil-table th {
-  background: #007bff;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.oil-table tr:hover {
-  background: #f1f1f1;
-}
-
-.oil-table td {
-  font-size: 14px;
-}
-
-/* 🛠️ Action Buttons */
-.oil-table button {
-  padding: 5px 10px;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-  margin: 0 5px;
-}
-
-.oil-table button:hover {
-  opacity: 0.8;
-}
-
-.oil-table button:nth-child(1) {
-  background-color: grey; /* Edit button */
-  color: #fff;
-}
-
-.oil-table button:nth-child(2) {
-  background-color: #dc3545; /* Delete button */
-  color: #fff;
-}
-
-/* No Data Message */
-.no-data {
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
   text-align: center;
-  color: #777;
-  font-size: 18px;
-  padding: 20px;
 }
 
-/*  Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+table th {
+  background-color: #007BFF;
+  color: white;
 }
 
-/*  Responsive Design */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    gap: 10px;
-  }
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-  .header input {
-    width: 100%;
-  }
-
-  .form {
-    width: 90%;
-  }
-
-  .oil-table th, .oil-table td {
-    padding: 10px;
-  }
+table tr:hover {
+  background-color: #e2f0ff;
 }

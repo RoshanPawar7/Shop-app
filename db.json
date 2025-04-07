@@ -2,29 +2,28 @@
   "oil": [
     {
       "id": "101",
-      "name": "Castrol-xl",
-      "brand": "Castrol",
-      "stock": 4,
+      "name": "Castrol-bs4",
+      "brand": "castrol",
       "price": 4500,
-      "liter": 50,
-      "category": "oil"
+      "stock": "6",
+      "liter": 60
     },
     {
       "id": "102",
-      "name": "Valvoline-CI4",
-      "brand": "valoline",
-      "stock": 8,
+      "name": "Valvoline-ch4",
+      "brand": "valvoline",
+      "stock": 5,
       "price": 900,
-      "liter": 20,
+      "liter": 50,
       "category": "oil"
     },
     {
       "id": "103",
       "name": "Servo-felt",
       "brand": "servo",
-      "stock": 5,
+      "stock": 3,
       "price": 450,
-      "liter": 1,
+      "liter": 50,
       "category": "oil"
     },
     {
@@ -32,8 +31,8 @@
       "name": "Gulf-x10",
       "brand": "Gulf",
       "price": 1500,
-      "stock": 15,
-      "liter": 7,
+      "stock": "15",
+      "liter": 150,
       "category": "oil"
     }
   ],
@@ -43,7 +42,7 @@
       "name": "Brake Pads",
       "brand": "Brembo",
       "price": 1400,
-      "stoc": 20,
+      "stock": 20,
       "category": "brake"
     },
     {
@@ -69,7 +68,7 @@
       "name": "Oil-filter",
       "brand": "feetgaurd",
       "price": 300,
-      "stock": 15,
+      "stock": "13",
       "category": "filter"
     },
     {
@@ -100,22 +99,6 @@
   "light": [
     {
       "id": "401",
-      "name": "Head-light",
-      "brand": "Hella",
-      "price": 600,
-      "stock": 15,
-      "category": "light"
-    },
-    {
-      "id": "402",
-      "name": "Head-light-bulp",
-      "brand": "Minda",
-      "price": 200,
-      "stock": 15,
-      "category": "light"
-    },
-    {
-      "id": "403",
       "name": "Side-indicator",
       "brand": "Hella",
       "price": 600,
@@ -123,7 +106,7 @@
       "category": "light"
     },
     {
-      "id": "404",
+      "id": "402",
       "name": "LED-light",
       "brand": "LED",
       "price": 350,
@@ -131,13 +114,14 @@
       "category": "light"
     },
     {
-      "id": "928",
-      "name": "Roshan pawar",
-      "brand": "lbiyfd",
-      "price": "20",
-      "stock": "40",
-      "liter": ""
+      "id": "403",
+      "name": "Headlight",
+      "brand": "minda",
+      "price": 350,
+      "stock": 15,
+      "category": "light"
     }
+    
   ],
   "gear": [
     {

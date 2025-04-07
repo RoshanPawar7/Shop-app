@@ -1,12 +1,12 @@
-
 import React, { useState, useEffect } from "react";
+import "./filter.css";
 
 const Filter = () => {
   const [oildata, setOildata] = useState([]);
   const [search, setSearch] = useState("");
   const [showForm, setShowForm] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);   // Track if editing
-  const [editId, setEditId] = useState(null);          // Store ID of the part being edited
+  const [isEditing, setIsEditing] = useState(false); // Track if editing
+  const [editId, setEditId] = useState(null); // Store ID of the part being edited
   const [formData, setFormData] = useState({
     name: "",
     brand: "",
@@ -18,7 +18,7 @@ const Filter = () => {
   // ✅ Fetch oil data from API
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:9000/oil");
+      const response = await fetch("http://localhost:9000/filter");
       const data = await response.json();
       setOildata(data);
     } catch (error) {
@@ -77,7 +77,7 @@ const Filter = () => {
     try {
       if (isEditing) {
         // Update existing record
-        const response = await fetch(`http://localhost:9000/oil/${editId}`, {
+        const response = await fetch(`http://localhost:9000/filter/${editId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const Filter = () => {
           ...formData,
         };
 
-        const response = await fetch("http://localhost:9000/oil", {
+        const response = await fetch("http://localhost:9000/filter", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -134,11 +134,13 @@ const Filter = () => {
 
   // ✅ Handle Delete
   const handleDelete = async (id) => {
-    const confirmDelete = window.confirm("Are you sure you want to delete this part?");
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this part?"
+    );
     if (!confirmDelete) return;
 
     try {
-      const response = await fetch(`http://localhost:9000/oil/${id}`, {
+      const response = await fetch(`http://localhost:9000/filter/${id}`, {
         method: "DELETE",
       });
 
@@ -164,7 +166,7 @@ const Filter = () => {
           onChange={handleSearch}
         />
         <button className="add-btn" onClick={toggleForm}>
-          {isEditing ? "Edit Part" : "Add +" }
+          {isEditing ? "Edit Part" : "Add +"}
         </button>
       </div>
 
@@ -205,24 +207,11 @@ const Filter = () => {
               onChange={handleChange}
               required
             />
-            <input
-              type="text"
-              name="liter"
-              placeholder="Liter"
-              value={formData.liter}
-              onChange={handleChange}
-              required
-            />
-
             <div className="form-buttons">
               <button type="submit" className="submit-btn">
                 {isEditing ? "Update" : "Submit"}
               </button>
-              <button
-                type="button"
-                className="cancel-btn"
-                onClick={toggleForm}
-              >
+              <button type="button" className="cancel-btn" onClick={toggleForm}>
                 Cancel
               </button>
             </div>
@@ -239,7 +228,6 @@ const Filter = () => {
             <th>Brand</th>
             <th>Price (₹)</th>
             <th>Stock</th>
-            <th>Liter</th>
             <th>Update</th>
             <th>Action</th>
           </tr>
@@ -253,18 +241,20 @@ const Filter = () => {
                 <td>{item.brand}</td>
                 <td>{item.price}</td>
                 <td>{item.stock}</td>
-                <td>{item.liter}</td>
+
                 <td>
                   <button onClick={() => handleEdit(item.id)}>Edit</button>
-                  </td>
-                  <td>
+                </td>
+                <td>
                   <button onClick={() => handleDelete(item.id)}> Delete</button>
                 </td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan="7" className="no-data">No data found</td>
+              <td colSpan="7" className="no-data">
+                No data found
+              </td>
             </tr>
           )}
         </tbody>
